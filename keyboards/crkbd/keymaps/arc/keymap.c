@@ -124,9 +124,9 @@ KC_NO, LGUI_T(KC_A), LALT_T(KC_S), LCTL_T(KC_D),  LSFT_T(KC_F), KC_G,     KC_H, 
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
         KC_NO,   LGUI(KC_Q),   LGUI(KC_W),   KC_NO,   KC_NO,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
   //|--------+--------+--------+--------+--------+--------|                     --------+--------+--------+--------+--------+--------|
-        KC_NO,   KC_NO,   LGUI(KC_S),   LGUI(KC_D),   KP_LSFT,   KC_NO,                        LALT(KC_LEFT),   KC_NO,   KC_NO,   LALT(KC_RGHT),   KC_NO,   KC_NO,
+        KC_NO,   KC_NO,   LGUI(KC_S),   LGUI(KC_D),   KC_LSFT,   KC_NO,                        LALT(KC_LEFT),   KC_NO,   KC_NO,   LALT(KC_RGHT),   KC_NO,   KC_NO,
   //|--------+--------+--------+--------+--------+--------|                     --------+--------+--------+--------+--------+--------|
-        KC_NO, LGUI(KC_Z),   LGUI(KC_X),  LGUI(KC_C),   LGUI(KC_V),   SGUI(Z),       LGUI(KC_N), KC_NO,   KC_NO,   KC_NO,   KC_NO,   TO(0),
+        KC_NO, LGUI(KC_Z),   LGUI(KC_X),  LGUI(KC_C),   LGUI(KC_V),   SGUI(KC_Z),       LGUI(KC_N), KC_NO,   KC_NO,   KC_NO,   KC_NO,   TO(0),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                             KC_NO,   KC_NO,   KC_NO,      KC_NO,   KC_NO,   KC_NO
                                       //`--------------------------'  `--------------------------'
