@@ -72,26 +72,26 @@ KC_NO, LGUI_T(KC_A), LALT_T(KC_S), LCTL_T(KC_D),  LSFT_T(KC_F), KC_G,     KC_H, 
 
   [4] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_TRNS, KC_COMM,    KC_7,    KC_8,    KC_9, KC_WH_U,                      KC_HOME, KC_PGDN, KC_PGUP,  KC_END, KC_BTN3,  KC_DEL,
+      KC_NO, KC_COMM,    KC_7,    KC_8,    KC_9, KC_WH_U,                      KC_HOME, KC_PGDN, KC_PGUP,  KC_END, KC_BTN3,  KC_NO,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_TRNS, LGUI_T(KC_DOT), LALT_T(KC_4), LCTL_T(KC_5), LSFT_T(KC_6), KC_WH_D,        KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BTN2, OSL(6),
+      KC_NO, LGUI_T(KC_DOT), LALT_T(KC_4), LCTL_T(KC_5), LSFT_T(KC_6), KC_WH_D,        KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BTN2, KC_NO,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_TRNS,    KC_0,    KC_1,    KC_2,    KC_3,   KC_NO,                      KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_BTN1,   TO(0),
+      KC_NO,    KC_0,    KC_1,    KC_2,    KC_3,   KC_NO,                      KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_BTN1,   TO(0),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,  KC_TRNS, KC_TRNS
+                                          KC_TRNS, KC_TRNS, KC_TRNS,   KC_ENT, KC_BSPC, KC_DEL
                                       //`--------------------------'  `--------------------------'
   ),
 
 
   [5] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_TRNS, KC_RPRN, KC_RBRC, KC_RCBR,   KC_GT,   KC_NO,                      KC_PPLS, KC_PMNS, KC_ASTR, KC_PSLS, KC_PEQL, KC_BSPC,
+      KC_TRNS, KC_RPRN, KC_RBRC, KC_RCBR,   KC_GT,   KC_NO,                       KC_GRV, KC_UNDS,   KC_AT, KC_BSLS, KC_HASH, KC_BSPC,
   //|--------+--------+--------+--------+--------|--------+                    |--------+--------+--------+--------+--------+--------|
-      KC_TRNS, KC_LPRN, KC_LBRC, KC_LCBR,   KC_LT, KC_QUES,                       KC_GRV, KC_UNDS, KC_CIRC, KC_BSLS, KC_HASH,  OSL(6),
+      KC_TRNS, KC_LPRN, KC_LBRC, KC_LCBR,   KC_LT, KC_QUES,                      KC_PPLS, KC_PMNS, KC_ASTR, KC_PSLS, KC_PEQL,  OSL(6),
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_TRNS, KC_EXLM,  KC_DLR, KC_PERC, KC_AMPR,   KC_NO,                      KC_QUOT, KC_TILD,   KC_AT, KC_PIPE, KC_DQUO,   TO(0),
+      KC_TRNS, KC_EXLM,  KC_DLR, KC_PERC, KC_AMPR,   KC_NO,                      KC_QUOT, KC_TILD, KC_CIRC, KC_PIPE, KC_DQUO,   TO(0),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_TRNS,   MO(4), KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS
+                                          KC_ESC,  KC_SPC,  KC_TAB,    KC_NO, KC_NO, KC_NO
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -110,11 +110,11 @@ KC_NO, LGUI_T(KC_A), LALT_T(KC_S), LCTL_T(KC_D),  LSFT_T(KC_F), KC_G,     KC_H, 
 
   [7] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+     QK_BOOT,   RGB_MOD,   RGB_RMOD,   RGBLIGHT_MODE_BREATHING,   RGB_MODE_XMAS,   RGB_MODE_GRADIENT,                        KC_NO,   TO(7),   TO(8),   TO(9),   KC_NO,   KC_NO,
   //|--------+--------+--------+--------+--------+--------|                     --------+--------+--------+--------+--------+--------|
-        KC_NO,   KC_NO,   TO(4),   TO(5),   KC_NO,   KC_NO,                      AG_NORM, AG_SWAP,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_NO,   RGB_HUI,   RGB_SAI,   RGB_VAI,   KC_NO,   KC_NO,                        KC_NO,   TO(4),   TO(5),   TO(6),   KC_NO,   KC_NO,
   //|--------+--------+--------+--------+--------+--------|                     --------+--------+--------+--------+--------+--------|
-        KC_NO,   TO(0),   TO(1),   TO(2),   TO(3),   KC_NO,                      CG_NORM, CG_SWAP,   KC_NO,   KC_NO,   KC_NO,   TO(0),
+        RGB_TOG,  RGB_HUD,   RGB_SAD,   RGB_VAD,   KC_NO,   KC_NO,                        TO(0),   TO(1),   TO(2),   TO(3),   KC_NO,   TO(0),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                             KC_NO,   KC_NO,   KC_NO,      KC_NO,   KC_NO,   KC_NO
                                       //`--------------------------'  `--------------------------'
@@ -136,7 +136,7 @@ KC_NO, LGUI_T(KC_A), LALT_T(KC_S), LCTL_T(KC_D),  LSFT_T(KC_F), KC_G,     KC_H, 
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       QK_BOOT, RGB_M_P, RGB_M_B, RGB_M_R,RGB_M_SW,RGB_M_SN,                      RGB_M_K, RGB_M_X, RGB_M_G, RGB_M_T,   KC_NO,   KC_NO,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|							
-      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, RGB_MOD,                      BL_TOGG,   BL_ON,  BL_INC, BL_BRTG,   KC_NO,  OSL(6),
+      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, RGB_MOD,                      BL_TOGG,   BL_ON,  BL_INC, BL_BRTG,   KC_NO,  KC_NO,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|						
         KC_NO, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD,RGB_RMOD,                      BL_STEP,  BL_OFF,  BL_DEC,   KC_NO,   KC_NO,   TO(0),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|			 
